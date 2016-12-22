@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap inputgroup</title>
+    <!-- Bootstrap -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container" style="width:300px">
+        <div class="input-group"> <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username"> </div>
+        <div class="input-group">
+            <input type="text" class="form-control"> <span class="input-group-addon">.00</span> </div>
+        <div class="input-group"> <span class="input-group-addon">$</span>
+            <input type="text" class="form-control"> <span class="input-group-addon">.00</span> </div>
+    </div>
+    <hr>
+    <!--外层容器，添加input-group类，input-group-addon添加附属指引-->
+    <div class="input-group"> <span class="input-group-addon">用户</span>
+        <!--内部控件 form-control-->
+        <input type="text" placeholder="Username" class="form-control"> </div>
+    <div class="input-group"><span class="input-group-addon">密码</span>
+        <input type="text" placeholder="Password" class="form-control"> </div>
+    <div class="input-group input-group-sm">
+        <input type="text" class="form-control" placeholder="input-group-sm"><span class="input-group-addon">不同的size，在容器添加input-group-sm，input-group-lg，input-group-xs</span></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

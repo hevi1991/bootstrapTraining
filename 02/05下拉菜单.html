@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bootstrap下拉菜单</title>
+    <!-- Bootstrap -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        div {
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+   <h1>下拉菜单总结</h1>
+   <p>1.在需要下拉菜单的触发标签中，添加data-toggle="dropdown"属性</p>
+   <p>2.在所在触发标签下方的ul添加.dropdown-menu类</p>
+    <div>
+        <!--格式是固定的，需要作为下拉菜单，就必须这么写-->
+        <div class="dropdown">
+            <!--1.class添加dropdown-toggle 2.设置id与ul的aria-labelledby需要一致 3.data-toggle-"dropdown" BS框架与下拉菜单丙丁的自定义属性-->
+            <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Dropdown Menu<span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <!--<li>rolo="presentation", <a>role="menuitem"-->
+                <li role="presentation"><a href="#" role="menuitem" tabindex="-1">只能改标题和链接item1</a></li>
+                <!--不可用 class添加disabled-->
+                <li role="presentation" class="disabled"><a href="#" role="menuitem" tabindex="-1">item2</a></li>
+                <!--添加下拉菜单标题 class="dropdown-header"-->
+                <li role="presentation" class="dropdown-header">提示性标题</li>
+                <li role="presentation"><a href="#" role="menuitem" tabindex="-1">item3</a></li>
+                <!--下拉菜单分割线 class="divider"-->
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a href="#" role="menuitem" tabindex="-1">item4</a></li>
+            </ul>
+        </div>
+        <!--下拉菜单部分结束-->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

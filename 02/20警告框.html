@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 警告框</title>
+    <!-- Bootstrap -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <h1>警告框</h1>
+    <p>警告框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种有意义的警告类。目前提供了成功、消息、警告或危险。</p>
+    <p>格式 class="alert alert-success"</p>
+    <h2>包含在容器内</h2>
+    <div class="container">
+        <div class="alert alert-success" role="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos asperiores ad, veritatis quae soluta dolores totam minima quam exercitationem animi.</div>
+        <div class="alert alert-info" role="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat numquam animi facilis ipsa mollitia, modi aliquid dolor aliquam officiis atque!</div>
+        <div class="alert alert-warning" role="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cumque vitae similique dolores ab culpa iusto dolor odit rerum. Ducimus.</div>
+        <div class="alert alert-danger" role="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam hic, expedita a earum aperiam ipsum magni exercitationem voluptas beatae sunt?</div>
+    </div>
+    <hr>
+    <h2>没包含在容器内</h2>
+    <div class="alert alert-success" role="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos asperiores ad, veritatis quae soluta dolores totam minima quam exercitationem animi.</div>
+    <div class="alert alert-info" role="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat numquam animi facilis ipsa mollitia, modi aliquid dolor aliquam officiis atque!</div>
+    <div class="alert alert-warning" role="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cumque vitae similique dolores ab culpa iusto dolor odit rerum. Ducimus.</div>
+    <div class="alert alert-danger" role="alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam hic, expedita a earum aperiam ipsum magni exercitationem voluptas beatae sunt?</div>
+    <hr>
+    <h2>可关闭的警告,alert-dismissable</h2>
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button> <strong>Warning!</strong> 关闭按钮需要给予class="close"和data-dismiss="alert"，配合容器的alert-dismissable和role="alert"使用.内部需要添加一个span[aria-hidden="true"]，不然不会消失 </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

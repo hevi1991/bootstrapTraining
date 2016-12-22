@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 辅助类 图片</title>
+    <!-- Bootstrap -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <h2>图片自适应</h2>
+    <figure> <img src="example.jpg" alt="example image" class="img-rounded">
+        <figcaption>.img-rounded</figcaption>
+    </figure>
+    <figure> <img src="example.jpg" alt="example image" class="img-circle">
+        <figcaption>.img-circle</figcaption>
+    </figure>
+    <figure> <img src="example.jpg" alt="example image" class="img-thumbnail">
+        <figcaption>.img-thumbnail</figcaption>
+    </figure>
+    <hr>
+    <h2>字体颜色</h2>
+    <p class="text-muted">.text-muted</p>
+    <p class="text-primary">.text-primary</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-info">.text-info</p>
+    <p class="text-warning">.text-warning</p>
+    <p class="text-danger">.text-danger</p>
+    <hr>
+    <h2>背景颜色</h2>
+    <p class="bg-primary">.bg-primary</p>
+    <p class="bg-success">.bg-success</p>
+    <p class="bg-info">.bg-info</p>
+    <p class="bg-warning">.bg-warning</p>
+    <p class="bg-danger">.bg-danger</p>
+    <hr>
+    <h2>关闭按钮</h2> 
+    <div class="bg-primary">
+       <span>右侧关闭按钮</span>
+        <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    </div>
+    <hr>
+    <div class="center-block bg-danger" style="width:100px"><h2>居中 center-block</h2><p>不能和栅格布局一起使用</p></div>
+    <hr>
+    <h2>清除两侧浮动</h2>
+    <p>常用于隔开浮动元素时候，添加.clearfix</p>
+    <div class="clearfix"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

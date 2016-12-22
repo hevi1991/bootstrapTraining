@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 导航标签的使用</title>
+    <!-- Bootstrap -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <h1>导航</h1>
+    <p>Bootstrap 中的导航组件都依赖同一个 .nav 类，状态类也是共用的。改变修饰类可以改变样式。</p>
+    <hr>
+    <h2>标签页</h2>
+    <h3>1.不带下拉的标签页</h3>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <h3>2.带下拉的标签页</h3>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#">A</a></li>
+        <li role="presentation"><a href="#">B</a></li>
+        <li role="presentation"><a href="#">C</a></li>
+        <li role="presentation"><a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu">DMenu<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li role="presentation"><a href="" role="menuitem" tabindex="-1">D1</a></li>
+                <li role="presentation"><a href="" role="menuitem" tabindex="-1">D2</a></li>
+                <li role="presentation"><a href="" role="menuitem" tabindex="-1">D3</a></li>
+                <li role="presentation"><a href="" role="menuitem" tabindex="-1">D4</a></li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2>胶囊式标签页</h2>
+    <h3>1.水平排列的胶囊式标签页</h3>
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <h3>2.垂直排列的胶囊式标签页(添加.nav-stacked)</h3>
+    <ul class="nav nav-pills nav-stacked" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <h3>3.带下拉的胶囊式标签</h3>
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="">A</a></li>
+        <li role="presentation"><a href="">B</a></li>
+        <li role="presentation"><a href="">C</a></li>
+        <li role="presentation">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenuD">D<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuD">
+                <li role="presentation"><a href="#" role="menuitem" tabindex="-1">D1</a></li>
+                <li role="presentation"><a href="#" role="menuitem" tabindex="-1">D2</a></li>
+                <li role="presentation"><a href="#" role="menuitem" tabindex="-1">D3</a></li>
+                <li role="presentation"><a href="#" role="menuitem" tabindex="-1">D4</a></li>
+                <li role="presentation"><a href="#" role="menuitem" tabindex="-1">D5</a></li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2>导航标签页两端对齐的类.nav-justified</h2>
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <ul class="nav nav-pills nav-justified" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation" class="disabled"><a href="#">Messages</a></li>
+    </ul>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

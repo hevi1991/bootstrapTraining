@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 面板</title>
+    <!-- Bootstrap -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="width:600px;margin:0 auto">
+    <h1>面板组件</h1>
+    <p>虽然不总是必须，但是某些时候你可能需要将某些 DOM 内容放到一个盒子里。对于这种情况，可以试试面板组件。</p>
+    <hr>
+    <h2>基础面板</h2>
+    <div class="panel panel-default">
+        <div class="panel-body"> Basic panel example </div>
+    </div>
+    <hr>
+    <h2>带标题的面板</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="panel-body"> Panel content </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">可以h3嵌套 Panel title</h3> </div>
+        <div class="panel-body"> Panel content </div>
+    </div>
+    <h2>带脚注的面板</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel title</div>
+        <div class="panel-body"> Panel content </div>
+        <div class="panel-footer">Panel footer</div>
+    </div>
+    <hr>
+    <h2>带情景样式的面板</h2>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Panel title</div>
+        <div class="panel-body"> Panel content </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">Panel title</div>
+        <div class="panel-body"> Panel content </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">Panel title</div>
+        <div class="panel-body"> Panel content </div>
+    </div>
+    <div class="panel panel-warning">
+        <div class="panel-heading">Panel title</div>
+        <div class="panel-body"> Panel content </div>
+    </div>
+    <div class="panel panel-danger">
+        <div class="panel-heading">Panel title</div>
+        <div class="panel-body"> Panel content </div>
+    </div>
+    <hr>
+    <h2>带表格的面板</h2>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+            <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+        <!-- Table -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <h2>带列表的面板</h2>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus et quo provident veritatis quia repellat iste, mollitia, ratione praesentium voluptatum facere, cumque consequatur porro rerum alias. Dolores odio illo debitis.</p>
+        </div>
+        <!-- List group -->
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

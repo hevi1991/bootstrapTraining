@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 媒体对象</title>
+    <!-- Bootstrap -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../dist/js/holder.js"></script>
+</head>
+
+<body>
+    <h2>媒体对象</h2>
+    <p>这是一个抽象的样式，用以构建不同类型的组件，这些组件都具有在文本内容的左或右侧对齐的图片（就像博客评论或 Twitter 消息等）。</p>
+    <hr>
+    <div class="media">
+        <a class="media-left" href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"> </a>
+        <div class="media-body">
+            <h4 class="media-heading">左侧图片</h4> 内容缩进 </div>
+    </div>
+    <hr>
+    <div class="media">
+        <a class="media-left" href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"> </a>
+        <div class="media-body">
+            <h4 class="media-heading">左侧图片</h4> 内容缩进
+            <div class="media">
+                <a class="media-left" href="#"> <img class="media-object" data-src="holder.js/64x64" alt="64x64" data-holder-rendered="true"> </a>
+                <div class="media-body">
+                    <h4 class="media-heading">内部再左侧图片</h4> 基于图片再缩进 </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="media">
+        <div class="media-body">
+            <h4 class="media-heading">右侧图片</h4> 内容在左侧 </div>
+        <a class="media-right" href="#"> <img data-src="holder.js/64x64" alt="64x64"> </a>
+    </div>
+    <hr>
+    <div class="media">
+        <a class="pull-right" href="#"> <img data-src="holder.js/64x64" alt="64x64" data-holder-rendered="true"> </a>
+        <a class="pull-left" href="#"> <img data-src="holder.js/64x64" alt="64x64"> </a>
+        <div class="media-body">
+            <h4 class="media-heading">左右侧都有图片(图片是左右float)</h4> 内容居中 </div>
+    </div>
+    <hr>
+    <h2>可以指定媒体的对齐方式</h2>
+    <div class="media">
+        <a class="media-left media-top" href="#"> <img data-src="holder.js/40x40" alt="40x40"> </a>
+        <div class="media-body">
+            <h4 class="media-heading">顶端对齐，默认</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis minima nisi eveniet soluta. Distinctio consequatur eos, enim officia, quam aliquid officiis quisquam aperiam velit pariatur maxime ad rerum facere unde quod! Magnam, hic. Alias rem odit, suscipit accusantium eveniet qui molestias eos commodi atque temporibus? Doloribus, dolore soluta distinctio consequuntur officia eveniet neque odit tenetur, numquam quo alias quas laudantium vel, veniam nam nesciunt explicabo, saepe dolorem praesentium ex. Aliquam molestias quis culpa libero perferendis rerum hic nihil, iusto quia nesciunt quaerat saepe minima architecto, voluptates tempore labore, ea deleniti aspernatur ratione. Obcaecati, nihil odit, similique repudiandae quasi esse? </div>
+    </div>
+    <div class="media">
+        <a class="media-left media-middle" href="#"> <img data-src="holder.js/40x40" alt="40x40"> </a>
+        <div class="media-body">
+            <h4 class="media-heading">居中对齐</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis minima nisi eveniet soluta. Distinctio consequatur eos, enim officia, quam aliquid officiis quisquam aperiam velit pariatur maxime ad rerum facere unde quod! Magnam, hic. Alias rem odit, suscipit accusantium eveniet qui molestias eos commodi atque temporibus? Doloribus, dolore soluta distinctio consequuntur officia eveniet neque odit tenetur, numquam quo alias quas laudantium vel, veniam nam nesciunt explicabo, saepe dolorem praesentium ex. Aliquam molestias quis culpa libero perferendis rerum hic nihil, iusto quia nesciunt quaerat saepe minima architecto, voluptates tempore labore, ea deleniti aspernatur ratione. Obcaecati, nihil odit, similique repudiandae quasi esse? </div>
+    </div>
+    <div class="media">
+        <a class="media-left media-bottom" href="#"> <img data-src="holder.js/40x40" alt="40x40"> </a>
+        <div class="media-body">
+            <h4 class="media-heading">底部对齐</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis minima nisi eveniet soluta. Distinctio consequatur eos, enim officia, quam aliquid officiis quisquam aperiam velit pariatur maxime ad rerum facere unde quod! Magnam, hic. Alias rem odit, suscipit accusantium eveniet qui molestias eos commodi atque temporibus? Doloribus, dolore soluta distinctio consequuntur officia eveniet neque odit tenetur, numquam quo alias quas laudantium vel, veniam nam nesciunt explicabo, saepe dolorem praesentium ex. Aliquam molestias quis culpa libero perferendis rerum hic nihil, iusto quia nesciunt quaerat saepe minima architecto, voluptates tempore labore, ea deleniti aspernatur ratione. Obcaecati, nihil odit, similique repudiandae quasi esse? </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
